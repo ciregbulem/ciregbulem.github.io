@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css">
         <link rel="icon" type="image/png" href="https://s3-us-west-1.amazonaws.com/ciregbulem-website/Chudi_Iregbulem_Logo_02.png">
     </head>
-    <body style="background-color: #fcfcfc;">
+    <body style="background-color: #FFFFFF;">
     <div class="container-fluid">
         <div class="row" style="background-image: url('https://s3-us-west-1.amazonaws.com/ciregbulem-website/bg_header.png'); padding-top: 20px; padding-bottom: 5px;">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -35,10 +35,10 @@
             <div class="row">
                 <strong><h3 style="color: #666666;">Projects</h3></strong>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <center><a href="https://www.behance.net/gallery/23178701/FitHub-(Work-In-Progress)"><img src="https://s3-us-west-1.amazonaws.com/fithub-development/fithub_logo_square.png" class="img img-responsive img-rounded my-work" alt="fithub" height="75%" width="75%"></a></center>
+                    <center><a href="https://www.behance.net/gallery/23178701/FitHub-(Work-In-Progress)" class="my-work"><img src="https://s3-us-west-1.amazonaws.com/fithub-development/fithub_logo_square.png" class="img img-responsive img-rounded" alt="fithub" height="75%" width="75%"></a></center>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <center><a href="http://chudiblog.herokuapp.com"><img src="https://s3-us-west-1.amazonaws.com/chudiblog-development/blogr_logo.png" class="img img-responsive img-rounded my-work" alt="blogr" height="75%" width="75%"></a></center>
+                    <center><a href="http://chudiblog.herokuapp.com" class="my-work"><img src="https://s3-us-west-1.amazonaws.com/chudiblog-development/blogr_logo.png" class="img img-responsive img-rounded" alt="blogr" height="75%" width="75%"></a></center>
                 </div>
              </div>
              <div class="row">
@@ -56,8 +56,11 @@
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
         <script type="text/javascript">
-            $.('.my-work').hover(
-                $.('my-work').addClass('hvr-grow'), $.('my-work').removeClass('hvr-grow'));
+            $.('.my-work').hover(function(){
+                        $.('my-work').addClass('hvr-grow');
+                    }, function(){
+                        $.('my-work').removeClass('hvr-grow');
+                    });
         </script>
     </body>
 </html>
