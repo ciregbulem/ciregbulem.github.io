@@ -20,7 +20,7 @@
                     <h4 class="text-center" style="color: #F7F7F7">
                         Full-Stack Engineer & Designer<br>
                         <p style="padding-top: 8px;">
-                            <a href="http://www.github.com/ciregbulem" style="color: #FFFFFF;"><i class="fa fa-github text-muted"></i></a> &nbsp;<a href="http://www.linkedin.com/in/ciregbulem" style="color: #FFFFFF;"><i class="fa fa-linkedin text-primary"></i></a> &nbsp;<a href="http://www.twitter.com/ciregbulem" style="color: #FFFFFF;"><i class="fa fa-twitter text-info"></i></a>
+                            <a href="http://www.github.com/ciregbulem" style="color: #FFFFFF;"><i class="fa fa-github text-muted social-links"></i></a> &nbsp;<a href="http://www.linkedin.com/in/ciregbulem" style="color: #FFFFFF;"><i class="fa fa-linkedin text-primary social-links"></i></a> &nbsp;<a href="http://www.twitter.com/ciregbulem" style="color: #FFFFFF;"><i class="fa fa-twitter text-info social-links"></i></a>
                         </p>
                     </h4>
                 </div>
@@ -54,7 +54,7 @@
                 <strong><h3 class="text-center" style="color: #666666;">Contact</h3></strong>
                 <br>
                 <p>
-                	<i class="fa fa-envelope"></i> &nbsp;<a href="mailto:chudi.iregbulem@trincoll.edu" style="color: #666666;">Chudi.Iregbulem@trincoll.edu</a>
+                    <i class="fa fa-envelope"></i> &nbsp;<a href="mailto:chudi.iregbulem@trincoll.edu" style="color: #666666;">Chudi.Iregbulem@trincoll.edu</a>
                 </p>
              </div>
         </div>
@@ -67,10 +67,19 @@
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
         <script type="text/javascript">
             $('.my-work').hover(function(){
-                        $('.my-work').addClass('hvr-grow');
-                    }, function(){
-                        $('.my-work').removeClass('hvr-grow');
-                    });
+                $('.my-work').addClass('hvr-grow');
+                }, function(){
+                    $('.my-work').removeClass('hvr-grow');
+                }
+            );
+            
+            $('.social-links').hover(function(){
+                $('.social-links').addClass('hvr-pulse');
+                }, function(){
+                    $('.social-links').removeClass('hvr-pulse');
+                }
+            );
+
         </script>
     </body>
 </html>
