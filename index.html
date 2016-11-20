@@ -153,6 +153,7 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="https://s3-us-west-1.amazonaws.com/ciregbulem-website/js/main.js"></script>
             <script type="text/javascript">
+            // tiny script to handle contact form submission
                 (function($) {
                     var $contactForm = $('#contact-form');
 
@@ -170,25 +171,25 @@
                             options.push('name=' + name);
                         }
                         if(email.trim()) {
-                            options.push('email=' + email);
+                            options.push('cc=' + email);
                         }
                         if(subject.trim()) {
                             options.push('subject=' + subject);
                         }
                         if(message.trim()) {
-                            options.push('message=' + message);
+                            options.push('body=' + message);
                         }
 
                         options = (options && options.length && options.join('&'));
                         if(typeof options === 'string') {
-                            mailToUrl += options;
+                            mailToUrl += encodeURI(options);
                         }
 
                         window.location.href = mailToUrl;
                     });
 
                 })(window.jQuery);
-            </script> // tiny script to handle contact form submission
+            </script>
 
 	</body>
 </html>
