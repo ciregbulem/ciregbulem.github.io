@@ -160,7 +160,7 @@
                     $contactForm.on('submit', function(e){
                         e.preventDefault();
 
-                        var mailToUrl = 'mailto:ciregbulem@gmail.com?',
+                        var mailToUrl = 'mailto:ciregbulem@gmail.com',
                             name = $contactForm.find('#name').val(),
                             email = $contactForm.find('#email').val(),
                             subject = $contactForm.find('#subject').val(),
@@ -182,7 +182,7 @@
 
                         options = (options && options.length && options.join('&'));
                         if(typeof options === 'string') {
-                            mailToUrl += encodeURI(options);
+                            mailToUrl += '?' + encodeURI(options);
                         }
 
                         window.location.href = mailToUrl;
